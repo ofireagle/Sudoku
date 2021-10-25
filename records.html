@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="records_style.css">
+    <title>Record Table</title>
+</head>
+
+<body onload="fillRecords()">
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a onclick="showAbout()">About</a></li>
+                    <li><a onclick="showInstructions()">Instructions</a></li>
+                    <li><a href="game.html">Back to game</a></li>
+                </ul>
+        </div>
+        </nav>
+        </div>
+    </header>
+    <div id="all" onclick="hide()">
+        <div class="menu" id="about" hidden><span>Avi Revah - Front End developer</span><br>
+            avirevah32@gmail.com <br> <br>
+            <span>Ofir Eagle - Front End developer </span><br>
+            ofir.eagle@gmail.com</div>
+        <div class="menu" id="instructions" hidden><span> Rules of Sudoku:</span><br><br>
+            The classic Sudoku game involves a grid of 81 squares. The grid is divided into nine blocks, each containing
+            nine squares.<br>
+            The rules of the game are simple: each of the nine blocks has to contain all the numbers 1-9 within its
+            squares. Each number can only appear once in a row, column or box. <br>
+            The difficulty lies in that each vertical nine-square column, or horizontal nine-square line across, within
+            the larger square, must also contain the numbers 1-9, without repetition or omission.<br>
+            Every puzzle has just one correct solution.<br><br><span>GOOD LUCK!</span></div>
+        <div id="tableC" class="table-container">
+            <div class="recordsTable">
+                <div class="divisions">
+                    <h1 class="easy">EASY</h1>
+                    <h1>MEDIUM</h1>
+                    <h1>HARD</h1>
+                </div>
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td id="td10a"></td>
+                            <td id="td10b"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td id="td11a"></td>
+                            <td id="td11b"></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td id="td12a"></td>
+                            <td id="td12b"></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td id="td13a"></td>
+                            <td id="td13b"></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td id="td14a"></td>
+                            <td id="td14b"></td>
+                        </tr>
+                </table>
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td id="td20a"></td>
+                            <td id="td20b"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td id="td21a"></td>
+                            <td id="td21b"></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td id="td22a"></td>
+                            <td id="td22b"></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td id="td23a"></td>
+                            <td id="td23b"></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td id="td24a"></td>
+                            <td id="td24b"></td>
+                        </tr>
+                </table>
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td id="td30a"></td>
+                            <td id="td30b"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td id="td31a"></td>
+                            <td id="td31b"></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td id="td32a"></td>
+                            <td id="td32b"></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td id="td33a"></td>
+                            <td id="td33b"></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td id="td34a"></td>
+                            <td id="td34b"></td>
+                        </tr>
+                </table>
+                </tbody>
+            </div>
+        </div>
+    </div>
+    <script src="records_script.js"></script>
+</body>
+
+</html>

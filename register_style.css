@@ -1,0 +1,87 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Nunito', sans-serif;
+    background: url(./img/wood-leaves-timber-wood-planks-139312.jpg) no-repeat;
+}
+
+.login-box{
+    border-radius: 30px;
+    background-color: rgba(245, 242, 222, 0.747);
+    padding:20px 20px; 
+    width: 280px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    color:rgb(54, 82, 62);
+    box-shadow: rgba(0, 0, 0, 0.308) 9px 4px 4px;
+}
+
+.login-box h1{
+    letter-spacing: 2px;
+    font-weight: lighter;
+    float: left;
+    font-size: 30px;
+    margin-top: -20px;
+    margin-bottom: 50px;
+    padding:13px 0;
+}
+
+.textbox{
+    color: white;
+    width:100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding:8px 0;
+    margin:8px 0;
+    border-bottom: 1px solid rgba(104, 98, 98, 0.726);
+}
+
+.textbox #notification{
+    color:rgb(248, 64, 64);
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.textbox i{
+    width: 26px;
+    float: left;
+    text-align: center;
+    color:rgba(0, 0, 0, 0.623);
+}
+
+.textbox input{
+    border:none;
+    outline:none;
+    background: none;
+    color:rgba(0, 0, 0, 0.651);
+    font-size: 19px;
+    font-weight: lighter;
+    width: 80%;
+    float: left;
+    margin:2px 10px;
+    padding:auto;
+}
+
+.btn{
+    width: 100% ;
+    background-color: rgba(80, 119, 92, 0.432);
+    font-weight: bold; 
+    color:rgba(0, 0, 0, 0.658);
+    padding:5px;
+    font-size:18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin:12px 0;
+}
+
+.btn:hover{
+    background-color: rgba(54, 82, 62, 0.507);
+    color: rgba(255, 255, 255, 0.644);;
+    font-weight: bolder;
+    cursor: pointer;
+    border:1 solid rgba(205, 212, 207, 0.219);
+}
+

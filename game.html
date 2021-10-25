@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="game_style.css">
+    <title>Sudoku</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="navbar">
+                    <ul>
+                        <li><a onclick="showAbout()">About</a></li>
+                        <li><a onclick="showInstructions()">Instructions</a></li>
+                        <li><a href="records.html">Records</a></li>
+                        <li><div class="selection">
+                            <select id="songs" onchange="setSong()" hidden>
+                            <option id="music" value="" disabled selected hidden>Select Music</option>
+                            <option value="Jazz">Jazz</option>
+                            <option value="Tropical House">Tropical House</option>
+                            <option value="Eyal Golan">Eyal Golan</option>
+                            <option value="Israeli">Israeli</option>
+                            <option value="None">None</option>
+                        </select></div></li>
+                        <li><a id="startOver" onclick="newGame()" hidden>New Game</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div id="all" onclick="hide()">
+        <div class="menu" id="about" hidden><span>Avi Revah - Front End developer</span><br>
+            avirevah32@gmail.com <br> <br>
+            <span> Ofir Eagle - Front End developer </span><br>
+            ofir.eagle@gmail.com</div>
+        <div class="menu" id="instructions" hidden><span>The Rules of Sudoku:</span><br><br>
+            The classic Sudoku game involves a grid of 81 squares. The grid is divided into nine blocks, each containing
+            nine squares.<br>
+            The rules of the game are simple: each of the nine blocks has to contain all the numbers 1-9 within its
+            squares. Each number can only appear once in a row, column or box. <br>
+            The difficulty lies in that each vertical nine-square column, or horizontal nine-square line across, within
+            the larger square, must also contain the numbers 1-9, without repetition or omission.<br>
+            Every puzzle has just one correct solution.<br><br><span>GOOD LUCK!</span></div>
+        <div id="difficulty">Select Difficulty</div>
+        <div id="level">
+            <a onclick="chooseLevel(1)">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Easy
+            </a>
+            <a onclick="chooseLevel(2)">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Medium
+            </a>
+            <a onclick="chooseLevel(3)">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Hard
+            </a>
+            <a onclick="chooseLevel(4)">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Challenge
+            </a>
+        </div>
+        <div id="victory" hidden>
+            <p>Congratulations!<br>The board is fully complete!</p>
+            <img src="https://media.giphy.com/media/cQNRp4QA8z7B6/giphy.gif" width="50%" height="60%">
+            <p id="enterTable" hidden>You have entered to the record list!</p>
+        </div>
+        <div id="game" hidden>
+            <div class="tablePosition">
+                <table id="table"></table>
+            </div>
+            <div class="buttonPosition">
+                <button onclick="newGame()">New Game</button>
+                <button onclick="again()">Again</button>
+                <button onclick="solveGame()">Solve</button>
+                <button onclick="getHint()">Hint</button>
+                <button onclick="endGame()">Finish</button>
+            </div>
+        </div>
+        <div id="timer" hidden>
+            <label id="hours">00</label>:<label id="minutes">00</label>:<label id="seconds">00</label>
+        </div>
+    </div>
+    <script src="game_script.js"></script>
+</body>
+
+</html>
